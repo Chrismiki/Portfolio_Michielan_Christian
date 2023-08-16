@@ -190,3 +190,163 @@ headline, descrizione e CTA
     color: var(--headlines-color-skills-footer-section);
  }
  
+ /* In questa sezione vado a personalizzare la sezione
+ skills*/
+.background-box-skills-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--background-color-section-skills-footer);
+ }
+ .box-skill-img-headline-text {
+     max-width: 322px;
+     margin: 0 auto;
+     padding: 40px 0px;
+     text-align: center;
+ }
+ .box-img-skill {
+    margin: 0 auto;
+    max-width: 135px;
+    height: 138px;
+    
+ }
+ .img-icon-skill {
+    max-width: 135px;
+    height: 138px;
+ }
+ 
+ .box-headline-skill {
+    padding-top: 20px;
+    color: var(--headlines-color-skills-footer-section);
+ }
+ .text-skill {
+    color: var(--text-color-skill-footer);
+ }
+ 
+ /* In questa sezione vado a personalizzare la sezione
+  progetti*/
+ .box-project {
+    margin: 0 auto;
+    max-width: 344px;
+    padding-bottom: 60px;
+ 
+ }
+ .box-cover-project {
+    max-width: 321px;
+    
+ }
+ .cover-project {
+    max-width: 334px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .box-hedline-text-download {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .box-headline-text-project {
+    max-width: 252px;
+ }
+ .headline-project {
+    color: var(--headlines-color-skills-footer-section);
+ }
+ .download-icon {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .bx {
+    font-size: 32px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: font-size 0.2s;
+ }
+ .bx:hover {
+    font-size: 40px;
+    color: var(--btn-first-background-color);
+ }
+ 
+ .pdf-download {
+    color: var(--background-color);
+ }
+ 
+ /* In questa sezione vado a personalizzare il footer e nello specifico
+ il background e il testo di introduzione*/
+ .footer-background {
+    background-color: var(--background-color-section-skills-footer);
+    padding: 90px 0;
+ }
+ .box-intro-text-form {
+    max-width: 333px;
+    margin: 0 auto;
+ }
+ .headline-form-intro {
+    color: var(--headlines-color-skills-footer-section);
+ }
+ .tex-intro-form {
+    color: var(--text-color-skill-footer);
+ }
+ 
+ /* In questa sezione vado a personalizzare il form contatti*/
+ .box-form {
+    max-width: 333px;
+    margin: 0 auto;
+    padding: 40px 0px;
+ }
+ .input-type {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--btn-font);
+ }
+ .textarea-message {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    resize: none;
+    font-family: var(--btn-font);
+ }
+ 
+ .box-btn-form {
+    margin: 0 auto;
+    max-width: 95px;
+ }
+ 
+ .box-btn-footer {
+    margin-top: 20px;
+    background-color: var(--btn-first-background-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--btn-first-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: var(--btn-font);
+    font-weight: 600;
+    cursor: pointer;
+    transition: padding 0.3s;
+ }
+ .box-btn-footer:hover {
+    background-color: var(--btn-first-color-hover);
+    border: 2px solid #FF914D;
+    padding: 15px 25px;
+ 
+ }
+ /* In questa sezione inserisco i canali social*/
+ .box-social-icons {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+ }
+ .icon {
+    font-size: 40px;
+    color: #fff;
+    transition: color 0.2s;
+ }
+ .icon:hover {
+    color: #FF914D;
+ }
+ 
