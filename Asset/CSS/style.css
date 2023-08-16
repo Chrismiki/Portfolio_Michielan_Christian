@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+:root {
+
+   /*Colori sito web*/
+   --background-color-nav-sticky:#FFF;
+   --background-color-primary:#33223F;
+   --background-color-profile-photo: #efccba;
+   --color-headline-description-portfolio: #58297A;
+   --nav-link-color:#58297A;
+   --nav-link-color-hover:#FF914D;
+   --background-color-mobile-nav:#33223F;
+   --background-color-primary-btn: #FF914D;
+   --background-color-primary-btn-hover: #fff;
+   --background-color-primary-btn-footer-hover: #58297A;
+   --background-color-section-skills-footer:#33223F;
+   --headlines-color-skills-footer-section: #FF914D;
+   --headlines-second-group-color:#58297A;
+   --text-color:#402c4f;
+   --text-color-skill-footer:#fff;
+   --btn-first-color:#fff;
+   --btn-first-background-color:#FF914D;
+   --btn-first-color-hover:#33223F;
+   --btn-first-background-color-hover:#FFFF;
+   --btn-font: 'Montserrat', sans-serif;
+
+}
+
+/* Famiglia e stile di font per titoli e testo*/
+
+h1 {
+   font-size: 30px;
+   font-family: 'Fira Sans', sans-serif;
+}
+h2 {
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+}
+p {
+   font-size: 15px;
+   font-family:'Montserrat', sans-serif;
+   line-height: 25px;
+}
+
+
+/* In questa sezione andrÃ² a customizzare i componenti dell'header, rendendolo
+ responsive per mobile*/
+
+ .nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+ .box-logo {
+    margin:auto;
+    max-width: 261px;
+ }
+ .logo {
+    max-width: 261px;
+    height: 105px;
+    cursor: pointer;
+ }
+
+ /* In questa sezione vado a togliere le decorazioni
+ dalle liste nidifico un flex per portare la mia lista sotto il logo*/
+
+ li {
+    list-style: none;
+ }
+ .nav-link {
+    text-decoration: none;
+    color:var(--nav-link-color);
+    position: relative;
+ }
+ .nav-item {
+   font-family: 'Fira Sans', sans-serif;;
+ }
+ .nav-link::after {
+   content: "";
+   display: block;
+   position: absolute;
+   width: 0%;
+   height: 3px;
+   border-radius: 10px;
+   background-color: var(--nav-link-color-hover);
+   transition: width 0.2s;
+ }
+ .nav-link:hover::after {
+   width: 100%;
+ }
+ .box-nav-item {
+    display: flex;
+    margin: 0 auto;
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+
+
+/* Per rendere responsive e creare il menu a 
+tendina stile hamburgher
+ uso javascript e delle media query*/
+.hamburgher {
+   display: none;
+   cursor: pointer;
+   position: absolute;
+   right: 15px;
+   top: 25px; 
+}
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px 0;
+   transition: all 0.3s ease;
+   background-color: var(--background-color-primary);
+}
+
+
+/*In questa sezione mi occupo della foto profilo principale della sua
+headline, descrizione e CTA  
+*/
+
+.backdrop-picture-text-btn {
+    padding-top: 60px;
+ }
+ 
+ .box-img-profile {
+    border-radius: 10px;
+    max-width: 326px;
+    height: 385px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var(--background-color-profile-photo)
+ }
+ .photo-profile {
+    max-width: 304px;
+    height: 406px;
+    align-items: center;
+ }
+ .headline-text-profile-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 346px;
+    margin: 0 auto;
+ }
+ .headline-profile {
+    color:var(--color-headline-description-portfolio);
+    padding-top: 80px;
+    padding-bottom: 20px;  
+ }
+ .text-profile {
+    color: var(--text-color);
+ }
+ .box-btn {
+    padding: 20px 0;
+ }
+ .btn-CV {
+    color: var(--btn-first-color);
+    background-color: var(--btn-first-background-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    cursor: pointer;
+    transition: padding 0.1s;  
+ }
+ .btn-CV:hover {
+    color: var(--btn-first-color-hover);
+    background-color: var(--btn-first-background-color-hover);
+    border: 2px solid #FF914D ;
+    padding: 11px 27px;  
+ }
+ /* In questa sezione vado a personalizzare la intro alla sezione
+  skills*/
+ 
+ .box-intro-skills {
+    max-width: 346px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 70px;
+ }
+ .headline-skills-intro {
+    color: var(--headlines-color-skills-footer-section);
+ }
+ 
