@@ -349,4 +349,321 @@ headline, descrizione e CTA
  .icon:hover {
     color: #FF914D;
  }
+
+ /*Responsive per mobile*/
+@media(max-width:700px) {
+   
+    .nav {
+       width: 100%;
+       position: -webkit-sticky;
+       position: sticky;
+       top: 0;
+       width: 100%;
+       background-color: var(--background-color-nav-sticky);
+    }
+    .hamburgher {
+       display: block;
+    }
+ 
+    .hamburgher.active .bar:nth-child(2) {
+       opacity: 0;
+    }
+    .hamburgher.active .bar:nth-child(1) {
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburgher.active .bar:nth-child(3) {
+       transform: translateY(-8px) rotate(-45deg);
+    }
+    .box-nav-item {
+       position: fixed;
+       top: 0;
+       bottom: 0;
+       z-index: 1000;
+       left: -100%;
+       min-width: 100%; /*Non sÃ² perchÃ© inserendo min-width al posto di width il background mi occupa il 100%*/
+       gap: 0;
+       flex-direction: column;
+       justify-content: space-around;
+       background-color: var(--background-color-mobile-nav);
+       text-align: center;
+       transition: 0.3s;
+    }
+    .nav-link {
+       color: #fff;
+       
+    }
+    .nav-link:hover {
+       color: #FF914D;
+       
+    }
+    .nav-link::after {
+       display: none;
+    }
+    .nav-item {
+       font-size: 30px;
+       padding: 5px 0px;  
+    }
+    .box-nav-item.active {
+       left: 0;
+    }
+ 
+ 
+ }
+ 
+ /*Responsive per tablet*/
+ 
+ @media(max-width:1024px) and (min-width:700px) {
+ 
+   /*Font-size e font-family*/
+    h1 {
+       font-size: 35px;
+       font-family: 'Fira Sans', sans-serif;
+    }
+    h2 {
+       font-size: 25px;
+       font-family: 'Montserrat', sans-serif;
+    }
+    p {
+       font-size: 20px;
+       font-family:'Montserrat', sans-serif;
+       line-height: 25px;
+    }
+ 
+    /*Sezione Header*/
+    .box-logo {
+       margin:auto;
+       max-width: 516px;
+    }
+    .logo {
+       max-width: 516px;
+       height: 201px;
+    }
+ 
+    .box-nav-item {
+       max-width: 660px;
+    }
+ 
+    .nav-item {
+       color: #58297A;
+       font-size: 25px;
+       font-weight: 400;
+    }
+ 
+    /*Sezione descrizione profilo*/
+    .backdrop-picture-text-btn {
+       margin:0 auto;
+       display: flex;
+       flex-direction: row-reverse;
+       max-width: 856px;
+       padding-top: 120px;
+    }
+    .headline-text-profile-btn {
+       max-width: 368px;
+       padding: 0 20px;
+    }
+ 
+    .box-img-profile {
+       padding-right: 18px;
+       
+    }
+ 
+ /*Sezione intro Skills*/
+    .box-intro-skills {
+       max-width: 507px;
+       text-align: center;
+       padding-top: 160px;
+       padding-bottom: 70px;
+    }
+ /*Sezione Skills*/
+    .background-box-skills-section {
+       display: grid;
+       grid-template-columns:  1fr 1fr;
+    }
+    .box-skill-img-headline-text {
+        max-width: 345px;
+    }
+    .box-img-skill {
+       max-width: 205px;
+       height: 198px; 
+    }
+    .img-icon-skill {
+       max-width: 205px;
+       height: 198px;
+    }
+ /*Sezione Progetti*/
+     .portfolio-box-project-cover-text-download {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    .box-project {
+       max-width: 348px;   
+    }
+    .box-cover-project {
+       max-width: 348px; 
+    }
+    .cover-project {
+       max-width: 348px;
+    }
+    .box-headline-text-project {
+       max-width: 252px;
+    }
+    .bx {
+       font-size: 42px;
+    }
+    .bx:hover {
+       font-size: 50px;
+       color: var(--btn-first-background-color);
+    }
+    /*Sezione button Vedi di piÃ¹*/
+    .box-btn-view-more-project {
+       max-width: 200px;
+       font-size: 25px;
+    }
+  /*Sezione intro modulo*/
+    .box-intro-text-form {
+       max-width: 550px;
+       text-align: center;
+    }
+  /*Sezione modulo*/
+    .box-form {
+       max-width: 433px;
+       margin: 0 auto;
+       padding-top: 70px;
+    }
+    .box-btn-form {
+       margin: 0 auto;
+       max-width: 120px;
+    }
+ }
+ 
+ 
+ 
+ /*Responsive per Desktop*/
+ @media(max-width:2000px) and (min-width:1024px) {
+    /*Font-size e font-family*/
+    h1 {
+       font-size: 35px;
+       font-family: 'Fira Sans', sans-serif;
+    }
+    h2 {
+       font-size: 25px;
+       font-family: 'Montserrat', sans-serif;
+    }
+    p {
+       font-size: 20px;
+       font-family:'Montserrat', sans-serif;
+       line-height: 25px;
+    }
+    .box-logo {
+       margin:auto;
+       max-width: 516px;
+    }
+    .logo {
+       max-width: 516px;
+       height: 301px;
+    }
+    .box-nav-item {
+       max-width: 860px;
+    }
+    .nav-item {
+       color: #58297A;
+       font-size: 30px;
+       font-weight: 400;
+       }
+       /*Sezione descrizione profilo*/
+       .backdrop-picture-text-btn {
+          margin:0 auto;
+          display: flex;
+          flex-direction: row-reverse;
+          max-width: 1137px;
+       }
+       /*Sezione immagine profilo*/
+       .box-img-profile {
+          max-width: 472px;
+          height: 529px;
+       }
+       .photo-profile {
+          max-width: 416px;
+          height: 556px;
+       }
+       /*Sezione descrizione*/
+       .headline-text-profile-btn {
+          max-width: 515px;
+          padding: 0 20px;
+       }
+       .box-img-profile {
+          padding-right: 18px;
+          
+       } 
+       .btn-CV {
+          font-size: 30px;
+       }
+    /*Sezione intro Skills*/
+    .box-intro-skills {
+       max-width: 711px;
+       text-align: center;
+       padding-top: 160px;
+       padding-bottom: 70px;
+    }
+    /*Sezione Skills*/
+    .background-box-skills-section {
+       display: grid;
+       grid-template-columns:  1fr 1fr 1fr;
+    }
+    .box-skill-img-headline-text {
+        max-width: 332px;
+    }
+    .box-img-skill {
+       max-width: 205px;
+       height: 198px;  
+    }
+    .img-icon-skill {
+       max-width: 197px;
+       height: 198px;
+    }
+    /*Sezione Progetti*/
+    .portfolio-box-project-cover-text-download {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    .box-project {
+       max-width: 450px;
+    }
+    .box-cover-project {
+       max-width: 450px;  
+    }
+    .cover-project {
+       max-width: 450px;
+    }
+    .box-headline-text-project {
+       max-width: 332px;
+    }
+    .bx {
+       font-size: 62px;
+    }
+    .bx:hover {
+       font-size: 70px;
+       color: var(--btn-first-background-color);
+    }
+    /*Sezione button Vedi di piÃ¹*/
+    .box-btn-view-more-project {
+        max-width: 200px;
+        font-size: 25px;
+       }
+    /*Sezione intro modulo*/
+    .box-intro-text-form {
+       max-width: 750px;
+       text-align: center;
+    }
+    /*Sezione modulo*/
+    .box-form {
+       max-width: 533px;
+       margin: 0 auto;
+       padding-top: 70px;
+    }
+    .box-btn-form {
+       margin: 0 auto;
+       max-width: 120px;
+    }
+ }
  
