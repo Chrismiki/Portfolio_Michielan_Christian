@@ -297,11 +297,12 @@ headline, descrizione e CTA
  }
  .input-type {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 5px ;
     margin-bottom: 20px;
     border-radius: 10px;
     border: none;
     font-family: var(--btn-font);
+    
  }
  .textarea-message {
     width: 100%;
@@ -309,6 +310,7 @@ headline, descrizione e CTA
     border-radius: 10px;
     resize: none;
     font-family: var(--btn-font);
+    padding: 10px 5px ;
  }
  
  .box-btn-form {
