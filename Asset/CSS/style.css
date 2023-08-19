@@ -46,7 +46,7 @@ p {
 }
 
 
-/* In questa sezione andrÃ² a customizzare i componenti dell'header, rendendolo
+/* In questa sezione customizzo i componenti dell'header, rendendolo
  responsive per mobile*/
 
  .nav {
@@ -380,7 +380,7 @@ headline, descrizione e CTA
        bottom: 0;
        z-index: 1000;
        left: -100%;
-       min-width: 100%; /*Non sÃ² perchÃ© inserendo min-width al posto di width il background mi occupa il 100%*/
+       min-width: 100%;
        gap: 0;
        flex-direction: column;
        justify-content: space-around;
@@ -513,11 +513,6 @@ headline, descrizione e CTA
     .bx:hover {
        font-size: 50px;
        color: var(--btn-first-background-color);
-    }
-    /*Sezione button Vedi di piÃ¹*/
-    .box-btn-view-more-project {
-       max-width: 200px;
-       font-size: 25px;
     }
   /*Sezione intro modulo*/
     .box-intro-text-form {
