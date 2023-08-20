@@ -281,6 +281,7 @@ headline, descrizione e CTA
  .box-intro-text-form {
     max-width: 333px;
     margin: 0 auto;
+    
  }
  .headline-form-intro {
     color: var(--headlines-color-skills-footer-section);
@@ -294,10 +295,12 @@ headline, descrizione e CTA
     max-width: 333px;
     margin: 0 auto;
     padding: 40px 0px;
+  
+
  }
  .input-type {
     width: 100%;
-    padding: 10px 5px ;
+    padding: 10px 0px;
     margin-bottom: 20px;
     border-radius: 10px;
     border: none;
@@ -306,11 +309,12 @@ headline, descrizione e CTA
  }
  .textarea-message {
     width: 100%;
+    padding: 10px 0px;
     height: 280px;
     border-radius: 10px;
     resize: none;
     font-family: var(--btn-font);
-    padding: 10px 5px ;
+    
  }
  
  .box-btn-form {

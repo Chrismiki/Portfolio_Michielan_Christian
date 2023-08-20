@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michielan Christian</title>
+    <title>Michielan Christian E-commerce Manager Jr</title>
     <link rel="stylesheet" href="./Asset/CSS/style.css">
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="./Asset/immagini/favicon-CM.svg">
@@ -63,7 +63,7 @@
          </p>
         </div>
         <div class="box-btn">
-            <button class="btn-CV">Scarica CV</button>
+            <button class="btn-CV" >Scarica CV</button>
         </div>
     </header>
 </section>
@@ -309,15 +309,15 @@
                 </div>
             </div>
     
-            <div class="box-form">
+            <form action="" class="box-form" id="contact-form">
     
-            <input class="input-type" type="text" id="fname"  placeholder="Scrivi il tuo nome" required><br>
-            <input class="input-type" type="text" id="lname"  placeholder="Scrivi il tuo cognome" required>
-            <textarea class="textarea-message" name="message" placeholder="Conosciamoci meglio, scrivimi un messaggio." required></textarea><br>
+            <input class="input-type" type="text" id="fname" name="user_name"  placeholder=" Scrivi il tuo nome" required ><br>
+            <input class="input-type" type="text" id="lname" name="user_name" placeholder=" Scrivi il tuo cognome" required >
+            <textarea class="textarea-message" name="message" placeholder=" Conosciamoci meglio, scrivimi un messaggio." required></textarea><br>
             <div class="box-btn-form">
-            <button class="box-btn-footer" type="button">Invia</button>
+            <button class="box-btn-footer" type="submit">Invia</button>
             </div>
-            </div>
+            </form>
     
             <nav class="box-social-icons">
                 <a href="https://www.linkedin.com/in/christian-michielan-31078522b/" target=”_blank” attribute><i class='icon bx bxl-linkedin-square'></i></a>
@@ -329,6 +329,7 @@
         </div>
 
 <!--Javascript-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="./Asset/javascript/script.js"></script>
 </body>
 </html>
