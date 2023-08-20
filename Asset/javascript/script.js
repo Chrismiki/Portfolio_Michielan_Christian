@@ -13,25 +13,22 @@ document.querySelectorAll(".nav-link").forEach (n => n.addEventListener("click",
 
 
 
-    
 
 
-    
-    (function() {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init('7UzpYsMgQ678ID88a');
-    })();
 
-
-    window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // these IDs from the previous steps
-            emailjs.sendForm('contact_service', 'contact_form', this)
-                .then(function() {
-                    console.log('SUCCESS!');
-                }, function(error) {
-                    console.log('FAILED...', error);
-                });
-        });
+function SendMail() {
+    var params = {
+        from_name : document.getElementById("fullname").value,
+        email_id : document.getElementById("email_id").value,
+        message : document.getElementById("message").value
     }
+    emailjs.send("service_qfn82if", "template_4vw2atg", params).then(function(res){
+        alert("Success! " + res.status);
+    })
+}
+ 
+
+    
+    
+    
+    
