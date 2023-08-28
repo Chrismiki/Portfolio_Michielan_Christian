@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+:root {
+
+   /*Colori sito web*/
+   --background-color-nav-sticky:#FFF;
+   --background-color-primary:#33223F;
+   --background-color-profile-photo: #efccba;
+   --color-headline-description-portfolio: #58297A;
+   --nav-link-color:#58297A;
+   --nav-link-color-hover:#FF914D;
+   --background-color-mobile-nav:#33223F;
+   --background-color-primary-btn: #FF914D;
+   --background-color-primary-btn-hover: #fff;
+   --background-color-primary-btn-footer-hover: #58297A;
+   --background-color-section-skills-footer:#33223F;
+   --headlines-color-skills-footer-section: #FF914D;
+   --headlines-second-group-color:#58297A;
+   --text-color:#402c4f;
+   --text-color-skill-footer:#fff;
+   --btn-first-color:#fff;
+   --btn-first-background-color:#FF914D;
+   --btn-first-color-hover:#33223F;
+   --btn-first-background-color-hover:#FFFF;
+   --btn-font: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+ }
+ h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--headlines-second-group-color);
+ }
+ p {
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+    line-height: 25px;
+ }
+
+
+   /*Sezione In cosa Credo*/
+ .box-credenze {
+    max-width: 346px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px 10px;
+    border: 1.5px solid var(--headlines-color-skills-footer-section);
+    border-radius: 20px;
+ }
+
+ .box-credenze:hover {
+    box-shadow: 0px 0px 2px 1px var(--headlines-color-skills-footer-section);
+    border:none;
+ }
+  /*Sezione altri interessi*/
+ .box-img-hobby {
+    max-width: 140px;
+    margin: auto;
+    padding-bottom: 50px;
+ }
+
+ .icon-hobby {
+    width: 140px;
+    height: 140px;
+ }
+ .text-icon {
+    text-align: center;
+    font-weight: 500;
+ }
+
+  /*Responsive per tablet*/
+  @media(max-width:1024px) and (min-width:700px) {
+    .cosa-credo-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-credenze {
+        text-align: center;
+        min-height: 200px;
+    }
+
+    .interessi-layout {
+        display: flex;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: auto;
+        padding: 90px 0px;
+    }
+
+}
+
+
+/*Responsive per Desktop*/
+@media(max-width:2000px) and (min-width:1024px) {
+
+    h1 {
+        font-size: 45px;
+        font-family: 'Fira Sans', sans-serif;
+     }
+     h2 {
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--headlines-second-group-color);
+     }
+     p {
+        font-size: 20px;
+        font-family:'Montserrat', sans-serif;
+        line-height: 25px;
+     }
+
+    .cosa-credo-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-credenze {
+        text-align: center;
+        max-width: 400px;
+        min-height: 250px;
+        padding: 40px 40px; 
+    }
+
+    .interessi-layout {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+        padding: 90px 0px;
+    }
+    .box-img-hobby {
+        max-width: 140px;
+        margin: auto;
+        padding-bottom: 50px;
+     }
+     .icon-hobby {
+        width: 170px;
+        height: 180px;
+     }
+}

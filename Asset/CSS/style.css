@@ -166,10 +166,11 @@ headline, descrizione e CTA
     border-radius: 10px;
     padding: 10px 25px;
     text-align: center;
+    text-decoration: none;
     font-family: Montserrat;
     font-size: 20px;
     cursor: pointer;
-    transition: padding 0.1s;  
+    transition: padding 0.1s; 
  }
  .btn-CV:hover {
     color: var(--btn-first-color-hover);
