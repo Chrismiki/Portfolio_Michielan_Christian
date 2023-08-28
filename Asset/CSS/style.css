@@ -355,6 +355,7 @@ headline, descrizione e CTA
  }
  .icon:hover {
     color: #FF914D;
+    font-size: 45px;
  }
 
  /*Responsive per mobile*/

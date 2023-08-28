@@ -2,26 +2,8 @@
 :root {
 
    /*Colori sito web*/
-   --background-color-nav-sticky:#FFF;
-   --background-color-primary:#33223F;
-   --background-color-profile-photo: #efccba;
-   --color-headline-description-portfolio: #58297A;
-   --nav-link-color:#58297A;
-   --nav-link-color-hover:#FF914D;
-   --background-color-mobile-nav:#33223F;
-   --background-color-primary-btn: #FF914D;
-   --background-color-primary-btn-hover: #fff;
-   --background-color-primary-btn-footer-hover: #58297A;
    --background-color-section-skills-footer:#33223F;
    --headlines-color-skills-footer-section: #FF914D;
-   --headlines-second-group-color:#58297A;
-   --text-color:#402c4f;
-   --text-color-skill-footer:#fff;
-   --btn-first-color:#fff;
-   --btn-first-background-color:#FF914D;
-   --btn-first-color-hover:#33223F;
-   --btn-first-background-color-hover:#FFFF;
-   --btn-font: 'Montserrat', sans-serif;
 }
 
 h1 {
