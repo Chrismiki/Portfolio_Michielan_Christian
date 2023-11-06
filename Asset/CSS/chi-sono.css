@@ -13,7 +13,7 @@ h1 {
  h2 {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    color: var(--headlines-second-group-color);
+    color: var(--headlines-color-skills-footer-section);
  }
  p {
     font-size: 15px;
@@ -84,7 +84,7 @@ h1 {
      h2 {
         font-size: 40px;
         font-family: 'Montserrat', sans-serif;
-        color: var(--headlines-second-group-color);
+        color: var(--headlines-color-skills-footer-section);
      }
      p {
         font-size: 20px;

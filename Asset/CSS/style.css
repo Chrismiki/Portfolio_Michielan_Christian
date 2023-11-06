@@ -39,12 +39,15 @@ h2 {
    font-size: 20px;
    font-family: 'Montserrat', sans-serif;
 }
+.headline-section {
+   font-size: 30px;
+   font-family: 'Fira Sans', sans-serif; 
+}
 p {
    font-size: 15px;
    font-family:'Montserrat', sans-serif;
    line-height: 25px;
 }
-
 
 /* In questa sezione customizzo i componenti dell'header, rendendolo
  responsive per mobile*/
@@ -189,6 +192,7 @@ headline, descrizione e CTA
  }
  .headline-skills-intro {
     color: var(--headlines-color-skills-footer-section);
+    font-size: 27px;
  }
  
  /* In questa sezione vado a personalizzare la sezione
@@ -431,6 +435,10 @@ headline, descrizione e CTA
        font-size: 25px;
        font-family: 'Montserrat', sans-serif;
     }
+    h2.headline-section {
+      font-size: 35px;
+      font-family: 'Fira Sans', sans-serif; 
+   }
     p {
        font-size: 20px;
        font-family:'Montserrat', sans-serif;
@@ -552,6 +560,10 @@ headline, descrizione e CTA
        font-size: 25px;
        font-family: 'Montserrat', sans-serif;
     }
+    h2.headline-section {
+      font-size: 35px;
+      font-family: 'Fira Sans', sans-serif; 
+   }
     p {
        font-size: 20px;
        font-family:'Montserrat', sans-serif;
