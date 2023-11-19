@@ -99,7 +99,7 @@ p {
     margin: 0 auto;
     max-width: 500px;
     justify-content: space-between;
-}
+ }
 
 
 
@@ -375,6 +375,7 @@ headline, descrizione e CTA
     }
     .hamburgher {
        display: block;
+       z-index: 1002;
     }
  
     .hamburgher.active .bar:nth-child(2) {
@@ -382,9 +383,11 @@ headline, descrizione e CTA
     }
     .hamburgher.active .bar:nth-child(1) {
        transform: translateY(8px) rotate(45deg);
+       background-color: var(--background-color-primary-btn);
     }
     .hamburgher.active .bar:nth-child(3) {
        transform: translateY(-8px) rotate(-45deg);
+       background-color: var(--background-color-primary-btn);
     }
     .box-nav-item {
        position: fixed;
@@ -396,6 +399,7 @@ headline, descrizione e CTA
        gap: 0;
        flex-direction: column;
        justify-content: space-around;
+       padding: 50px 0;
        background-color: var(--background-color-mobile-nav);
        text-align: center;
        transition: 0.3s;
@@ -412,8 +416,7 @@ headline, descrizione e CTA
        display: none;
     }
     .nav-item {
-       font-size: 30px;
-       padding: 5px 0px;  
+       font-size: 25px;
     }
     .box-nav-item.active {
        left: 0;

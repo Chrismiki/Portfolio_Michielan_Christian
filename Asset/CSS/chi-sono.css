@@ -52,6 +52,25 @@ h1 {
     font-weight: 500;
  }
 
+ /*Responsive per mobile*/
+@media(max-width:700px) {
+   .box-nav-item {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: 1000;
+      left: -100%;
+      min-width: 100%;
+      gap: 0;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 120px 0;
+      background-color: var(--background-color-mobile-nav);
+      text-align: center;
+      transition: 0.3s;
+   }
+   }
+
   /*Responsive per tablet*/
   @media(max-width:1024px) and (min-width:700px) {
     .cosa-credo-layout {
@@ -72,7 +91,6 @@ h1 {
     }
 
 }
-
 
 /*Responsive per Desktop*/
 @media(max-width:2000px) and (min-width:1024px) {
