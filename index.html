@@ -25,11 +25,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <!--Link a Boxicon per importare le icone di download-->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <!--Open Graph per la condivisione del sito tramite social-->
-<meta property="og:title" content="Michielan Christian E-commerce Manager Jr"/>
-<meta property="og:type" content="Portfolio"/>
-<meta property="og:description" content="In questo sito si possono trovare tutti i progetti migliori che ho fatto in ambito e-commerce e digital marketing."/>
-<meta property="og:url" content="https://chrismiki.github.io/Portfolio_Michielan_Christian/"/>
+<!-- Primary Meta Tags -->
+<meta name="title" content="Michielan Christian E-commerce Manager Jr" />
+<meta name="description" content="In questo sito si possono trovare tutti i progetti migliori che ho fatto in ambito e-commerce e digital marketing." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chrismiki.github.io/Portfolio_Michielan_Christian/" />
+<meta property="og:title" content="Michielan Christian E-commerce Manager Jr" />
+<meta property="og:description" content="In questo sito si possono trovare tutti i progetti migliori che ho fatto in ambito e-commerce e digital marketing." />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrismiki.github.io/Portfolio_Michielan_Christian/" />
+<meta property="twitter:title" content="Michielan Christian E-commerce Manager Jr" />
+<meta property="twitter:description" content="In questo sito si possono trovare tutti i progetti migliori che ho fatto in ambito e-commerce e digital marketing." />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
 </head>
 
 <body>
@@ -37,8 +52,10 @@
     <!--Sezione navigazione e creazione hamburgher bar per versione mobile-->
     <header class="nav">
         <div class="box-logo">
+            <a href="./index.html">
             <img class="logo" src="./Asset/immagini/Christian Michielan Ecommerce Manager-logo-2.svg" 
             alt="Logo Michielan Christian Ecommerce Manager">
+            </a>
         </div>
         <nav>
             <ul class="box-nav-item">
@@ -68,7 +85,7 @@
         <div  class="headline-profile">
             <h1>Semplicemente...</h1>
         </div>
-        <div  class="text-profile">
+        <div  class="text-profile"> 
          <p>Christian,
             un appassionato di Digitale, Crescita personale e ultimamente di Neuroscienze, 
             sono un tipo curioso nonché vorace lettore di libri e di risorse inerenti al marketing e al business.
@@ -325,7 +342,7 @@
             <form action="" class="box-form">
     
             <input class="input-type" type="text" id="fullname"   placeholder=" Scrivi il tuo Nome e Cognome" required ><br>
-            <input class="input-type" type="mail" id="email_id"   placeholder=" Scrivi la tua mail" required >
+            <input class="input-type" type="email" id="email_id"   placeholder=" Scrivi la tua mail" required >
             <textarea class="textarea-message" id="message" placeholder=" Conosciamoci meglio, scrivimi un messaggio." required></textarea><br>
             <div class="box-btn-form">
             <button onclick="SendMail()" class="box-btn-footer" type="submit">Invia</button>
