@@ -1,0 +1,687 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+:root {
+
+   /*Colori sito web*/
+   --background-color-nav-sticky:#FFF;
+   --background-color-primary:#33223F;
+   --background-color-profile-photo: #efccba;
+   --color-headline-description-portfolio: #58297A;
+   --nav-link-color:#58297A;
+   --nav-link-color-hover:#FF914D;
+   --background-color-mobile-nav:#33223F;
+   --background-color-primary-btn: #FF914D;
+   --background-color-primary-btn-hover: #fff;
+   --background-color-primary-btn-footer-hover: #58297A;
+   --background-color-section-skills-footer:#33223F;
+   --headlines-color-skills-footer-section: #FF914D;
+   --headlines-second-group-color:#58297A;
+   --text-color:#402c4f;
+   --text-color-skill-footer:#fff;
+   --btn-first-color:#fff;
+   --btn-first-background-color:#FF914D;
+   --btn-first-color-hover:#33223F;
+   --btn-first-background-color-hover:#FFFF;
+   --btn-font: 'Montserrat', sans-serif;
+
+}
+
+/* Famiglia e stile di font per titoli e testo*/
+
+h1 {
+   font-size: 30px;
+   font-family: 'Fira Sans', sans-serif;
+}
+h2 {
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+}
+.headline-section {
+   font-size: 30px;
+   font-family: 'Fira Sans', sans-serif; 
+}
+p {
+   font-size: 15px;
+   font-family:'Montserrat', sans-serif;
+   line-height: 25px;
+}
+
+/* In questa sezione customizzo i componenti dell'header, rendendolo
+ responsive per mobile*/
+
+ .nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+ .box-logo {
+    margin:auto;
+    max-width: 261px;
+ }
+ .logo {
+    max-width: 261px;
+    height: 105px;
+    cursor: pointer;
+ }
+
+ /* In questa sezione vado a togliere le decorazioni
+ dalle liste nidifico un flex per portare la mia lista sotto il logo*/
+
+ li {
+    list-style: none;
+ }
+ .nav-link {
+    text-decoration: none;
+    color:var(--nav-link-color);
+    position: relative;
+ }
+ .nav-item {
+   font-family: 'Fira Sans', sans-serif;;
+ }
+ .nav-link::after {
+   content: "";
+   display: block;
+   position: absolute;
+   width: 0%;
+   height: 3px;
+   border-radius: 10px;
+   background-color: var(--nav-link-color-hover);
+   transition: width 0.2s;
+ }
+ .nav-link:hover::after {
+   width: 100%;
+ }
+ .box-nav-item {
+    display: flex;
+    margin: 0 auto;
+    max-width: 500px;
+    justify-content: space-between;
+ }
+
+
+
+/* Per rendere responsive e creare il menu a 
+tendina stile hamburgher
+ uso javascript e delle media query*/
+.hamburgher {
+   display: none;
+   cursor: pointer;
+   position: absolute;
+   right: 15px;
+   top: 25px; 
+}
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px 0;
+   transition: all 0.3s ease;
+   background-color: var(--background-color-primary);
+}
+
+
+/*In questa sezione mi occupo della foto profilo principale della sua
+headline, descrizione e CTA  
+*/
+
+.backdrop-picture-text-btn {
+    padding-top: 60px;
+ }
+ 
+ .box-img-profile {
+    border-radius: 10px;
+    max-width: 326px;
+    height: 385px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var(--background-color-profile-photo)
+ }
+ .photo-profile {
+    max-width: 304px;
+    height: 406px;
+    align-items: center;
+ }
+ .headline-text-profile-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 346px;
+    margin: 0 auto;
+ }
+ .headline-profile {
+    color:var(--color-headline-description-portfolio);
+    padding-top: 80px;
+    padding-bottom: 20px;  
+ }
+ .text-profile {
+    color: var(--text-color);
+ }
+ .box-btn {
+    padding: 20px 0;
+ }
+ .btn-CV {
+    color: var(--btn-first-color);
+    background-color: var(--btn-first-background-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    cursor: pointer;
+    transition: padding 0.1s; 
+ }
+ .btn-CV:hover {
+    color: var(--btn-first-color-hover);
+    background-color: var(--btn-first-background-color-hover);
+    border: 2px solid #FF914D ;
+    padding: 11px 27px;  
+ }
+ /* In questa sezione vado a personalizzare la intro alla sezione
+  skills*/
+ 
+ .box-intro-skills {
+    max-width: 346px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 70px;
+ }
+ .headline-skills-intro {
+    color: var(--headlines-color-skills-footer-section);
+    font-size: 27px;
+ }
+ 
+ /* In questa sezione vado a personalizzare la sezione
+ skills*/
+.background-box-skills-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--background-color-section-skills-footer);
+ }
+ .box-skill-img-headline-text {
+     max-width: 322px;
+     margin: 0 auto;
+     padding: 40px 0px;
+     text-align: center;
+ }
+ .box-img-skill {
+    margin: 0 auto;
+    max-width: 135px;
+    height: 138px;
+    
+ }
+ .img-icon-skill {
+    max-width: 135px;
+    height: 138px;
+ }
+ 
+ .box-headline-skill {
+    padding-top: 20px;
+    color: var(--headlines-color-skills-footer-section);
+ }
+ .text-skill {
+    color: var(--text-color-skill-footer);
+ }
+ 
+ /* In questa sezione vado a personalizzare la sezione
+  progetti*/
+ .box-project {
+    margin: 0 auto;
+    max-width: 344px;
+    padding-bottom: 60px;
+ 
+ }
+ .box-cover-project {
+    max-width: 321px;
+    
+ }
+ .cover-project {
+    max-width: 334px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .box-hedline-text-download {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .box-headline-text-project {
+    max-width: 252px;
+ }
+ .headline-project {
+    color: var(--headlines-color-skills-footer-section);
+ }
+ .download-icon {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .bx {
+    font-size: 32px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: font-size 0.2s;
+ }
+ .bx:hover {
+    font-size: 40px;
+    color: var(--btn-first-background-color);
+ }
+ 
+ .pdf-download {
+    color: var(--background-color);
+ }
+ 
+ /* In questa sezione vado a personalizzare il footer e nello specifico
+ il background e il testo di introduzione*/
+ .footer-background {
+    background-color: var(--background-color-section-skills-footer);
+    padding: 90px 0;
+ }
+ .box-intro-text-form {
+    max-width: 333px;
+    margin: 0 auto;
+    
+ }
+ .headline-form-intro {
+    color: var(--headlines-color-skills-footer-section);
+ }
+ .tex-intro-form {
+    color: var(--text-color-skill-footer);
+ }
+ 
+ /* In questa sezione vado a personalizzare il form contatti*/
+ .box-form {
+    max-width: 333px;
+    margin: 0 auto;
+    padding: 40px 0px;
+  
+
+ }
+ .input-type {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--btn-font);
+    
+ }
+ .textarea-message {
+    width: 100%;
+    padding: 10px 0px;
+    height: 280px;
+    border-radius: 10px;
+    resize: none;
+    font-family: var(--btn-font);
+    
+ }
+ 
+ .box-btn-form {
+    margin: 0 auto;
+    max-width: 95px;
+ }
+ 
+ .box-btn-footer {
+    margin-top: 20px;
+    background-color: var(--btn-first-background-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--btn-first-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: var(--btn-font);
+    font-weight: 600;
+    cursor: pointer;
+    transition: padding 0.3s;
+ }
+ .box-btn-footer:hover {
+    background-color: var(--btn-first-color-hover);
+    border: 2px solid #FF914D;
+    padding: 15px 25px;
+ 
+ }
+ /* In questa sezione inserisco i canali social*/
+ .box-social-icons {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+ }
+ .icon {
+    font-size: 40px;
+    color: #fff;
+    transition: color 0.2s;
+ }
+ .icon:hover {
+    color: #FF914D;
+    font-size: 45px;
+ }
+
+ /*Responsive per mobile*/
+@media(max-width:700px) {
+   
+    .nav {
+       width: 100%;
+       position: -webkit-sticky;
+       position: sticky;
+       top: 0;
+       width: 100%;
+       background-color: var(--background-color-nav-sticky);
+    }
+    .hamburgher {
+       display: block;
+       z-index: 1002;
+    }
+ 
+    .hamburgher.active .bar:nth-child(2) {
+       opacity: 0;
+    }
+    .hamburgher.active .bar:nth-child(1) {
+       transform: translateY(8px) rotate(45deg);
+       background-color: var(--background-color-primary-btn);
+    }
+    .hamburgher.active .bar:nth-child(3) {
+       transform: translateY(-8px) rotate(-45deg);
+       background-color: var(--background-color-primary-btn);
+    }
+    .box-nav-item {
+       position: fixed;
+       top: 0;
+       bottom: 0;
+       z-index: 1000;
+       left: -100%;
+       min-width: 100%;
+       gap: 0;
+       flex-direction: column;
+       justify-content: space-around;
+       padding: 50px 0;
+       background-color: var(--background-color-mobile-nav);
+       text-align: center;
+       transition: 0.3s;
+    }
+    .nav-link {
+       color: #fff;
+       
+    }
+    .nav-link:hover {
+       color: #FF914D;
+       
+    }
+    .nav-link::after {
+       display: none;
+    }
+    .nav-item {
+       font-size: 25px;
+    }
+    .box-nav-item.active {
+       left: 0;
+    }
+ 
+ 
+ }
+ 
+ /*Responsive per tablet*/
+ 
+ @media(max-width:1024px) and (min-width:700px) {
+ 
+   /*Font-size e font-family*/
+    h1 {
+       font-size: 35px;
+       font-family: 'Fira Sans', sans-serif;
+    }
+    h2 {
+       font-size: 25px;
+       font-family: 'Montserrat', sans-serif;
+    }
+    h2.headline-section {
+      font-size: 35px;
+      font-family: 'Fira Sans', sans-serif; 
+   }
+    p {
+       font-size: 20px;
+       font-family:'Montserrat', sans-serif;
+       line-height: 25px;
+    }
+ 
+    /*Sezione Header*/
+    .box-logo {
+       margin:auto;
+       max-width: 516px;
+    }
+    .logo {
+       max-width: 516px;
+       height: 201px;
+    }
+ 
+    .box-nav-item {
+       max-width: 660px;
+    }
+ 
+    .nav-item {
+       color: #58297A;
+       font-size: 25px;
+       font-weight: 400;
+    }
+ 
+    /*Sezione descrizione profilo*/
+    .backdrop-picture-text-btn {
+       margin:0 auto;
+       display: flex;
+       flex-direction: row-reverse;
+       max-width: 856px;
+       padding-top: 120px;
+    }
+    .headline-text-profile-btn {
+       max-width: 368px;
+       padding: 0 20px;
+    }
+ 
+    .box-img-profile {
+       padding-right: 18px;
+       
+    }
+ 
+ /*Sezione intro Skills*/
+    .box-intro-skills {
+       max-width: 507px;
+       text-align: center;
+       padding-top: 160px;
+       padding-bottom: 70px;
+    }
+ /*Sezione Skills*/
+    .background-box-skills-section {
+       display: grid;
+       grid-template-columns:  1fr 1fr;
+    }
+    .box-skill-img-headline-text {
+        max-width: 345px;
+    }
+    .box-img-skill {
+       max-width: 205px;
+       height: 198px; 
+    }
+    .img-icon-skill {
+       max-width: 205px;
+       height: 198px;
+    }
+ /*Sezione Progetti*/
+     .portfolio-box-project-cover-text-download {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    .box-project {
+       max-width: 348px;   
+    }
+    .box-cover-project {
+       max-width: 348px; 
+    }
+    .cover-project {
+       max-width: 348px;
+    }
+    .box-headline-text-project {
+       max-width: 252px;
+    }
+    .bx {
+       font-size: 42px;
+    }
+    .bx:hover {
+       font-size: 50px;
+       color: var(--btn-first-background-color);
+    }
+  /*Sezione intro modulo*/
+    .box-intro-text-form {
+       max-width: 550px;
+       text-align: center;
+    }
+  /*Sezione modulo*/
+    .box-form {
+       max-width: 433px;
+       margin: 0 auto;
+       padding-top: 70px;
+    }
+    .box-btn-form {
+       margin: 0 auto;
+       max-width: 120px;
+    }
+ }
+ 
+ 
+ 
+ /*Responsive per Desktop*/
+ @media(max-width:2000px) and (min-width:1024px) {
+    /*Font-size e font-family*/
+    h1 {
+       font-size: 35px;
+       font-family: 'Fira Sans', sans-serif;
+    }
+    h2 {
+       font-size: 25px;
+       font-family: 'Montserrat', sans-serif;
+    }
+    h2.headline-section {
+      font-size: 35px;
+      font-family: 'Fira Sans', sans-serif; 
+   }
+    p {
+       font-size: 20px;
+       font-family:'Montserrat', sans-serif;
+       line-height: 25px;
+    }
+    .box-logo {
+       margin:auto;
+       max-width: 516px;
+    }
+    .logo {
+       max-width: 516px;
+       height: 301px;
+    }
+    .box-nav-item {
+       max-width: 860px;
+    }
+    .nav-item {
+       color: #58297A;
+       font-size: 30px;
+       font-weight: 400;
+       }
+       /*Sezione descrizione profilo*/
+       .backdrop-picture-text-btn {
+          margin:0 auto;
+          display: flex;
+          flex-direction: row-reverse;
+          max-width: 1137px;
+       }
+       /*Sezione immagine profilo*/
+       .box-img-profile {
+          max-width: 472px;
+          height: 529px;
+       }
+       .photo-profile {
+          max-width: 416px;
+          height: 556px;
+       }
+       /*Sezione descrizione*/
+       .headline-text-profile-btn {
+          max-width: 515px;
+          padding: 0 20px;
+       }
+       .box-img-profile {
+          padding-right: 18px;
+          
+       } 
+       .btn-CV {
+          font-size: 30px;
+       }
+    /*Sezione intro Skills*/
+    .box-intro-skills {
+       max-width: 711px;
+       text-align: center;
+       padding-top: 160px;
+       padding-bottom: 70px;
+    }
+    /*Sezione Skills*/
+    .background-box-skills-section {
+       display: grid;
+       grid-template-columns:  1fr 1fr 1fr;
+    }
+    .box-skill-img-headline-text {
+        max-width: 332px;
+    }
+    .box-img-skill {
+       max-width: 205px;
+       height: 198px;  
+    }
+    .img-icon-skill {
+       max-width: 197px;
+       height: 198px;
+    }
+    /*Sezione Progetti*/
+    .portfolio-box-project-cover-text-download {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    .box-project {
+       max-width: 450px;
+    }
+    .box-cover-project {
+       max-width: 450px;  
+    }
+    .cover-project {
+       max-width: 450px;
+    }
+    .box-headline-text-project {
+       max-width: 332px;
+    }
+    .bx {
+       font-size: 62px;
+    }
+    .bx:hover {
+       font-size: 70px;
+       color: var(--btn-first-background-color);
+    }
+    /*Sezione button Vedi di piÃ¹*/
+    .box-btn-view-more-project {
+        max-width: 200px;
+        font-size: 25px;
+       }
+    /*Sezione intro modulo*/
+    .box-intro-text-form {
+       max-width: 750px;
+       text-align: center;
+    }
+    /*Sezione modulo*/
+    .box-form {
+       max-width: 533px;
+       margin: 0 auto;
+       padding-top: 70px;
+    }
+    .box-btn-form {
+       margin: 0 auto;
+       max-width: 120px;
+    }
+ }
+ 
