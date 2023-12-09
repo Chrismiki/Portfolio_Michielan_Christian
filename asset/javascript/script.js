@@ -11,7 +11,7 @@ document.querySelectorAll(".nav-link").forEach (n => n.addEventListener("click",
         hamburgher .classList.remove("active");
         boxNavItem .classList.remove("active");
     }))
-/*Conncessione con emailjs per rendere il modulo attivo*/
+/*Concessione con emailjs per rendere il modulo attivo*/
 function SendMail() {
     var params = {
         from_name : document.getElementById("fullname").value,
@@ -22,6 +22,7 @@ function SendMail() {
         alert("Success! " + res.status);
     })
 }
+emailjs.sendForm('contact_service', 'contact_form', this)
  
 
     
