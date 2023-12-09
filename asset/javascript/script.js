@@ -14,15 +14,15 @@ document.querySelectorAll(".nav-link").forEach (n => n.addEventListener("click",
 /*Concessione con emailjs per rendere il modulo attivo*/
 function SendMail() {
     var params = {
-        from_name : document.getElementById("fullname").value,
+        from_name : document.getElementById("fullName").value,
         email_id : document.getElementById("email_id").value,
         message_id : document.getElementById("message").value
     }
-    emailjs.send("service_qfn82if", "template_4vw2atg", params).then(function(res){
+    emailjs.send("service_qfn82if", "template_4vw2atg", params).then(function (res){
         alert("Success! " + res.status);
     })
 }
-emailjs.sendForm('contact_service', 'contact_form', this)
+
  
 
     
